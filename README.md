@@ -1,5 +1,15 @@
-# stm8-tiny-starter-kit
-Empty project for creating an stm8-tiny application.
+# stm8-tiny-cap-touch
+```
++-------------------+
+| Paper             | To aluminum ground plane
+|       +--------+  +--+-------------+
+|       |  Alum. |  |  R (150K)      |
+|       |  foil  +-----+--------+    +
+|       |        |  |           |   GND
+|       +--------+  |           +
+|                   |          PC3
++-------------------+
+```
 
 ## Setup
 - Copy `tools/Linux/udev/70-st-link.rules` to `/etc/udev/` and run `udevadm control --reload-rules`.
@@ -24,4 +34,3 @@ make -f <target>.mk erase
 ```shell
 make -f <target>.mk upload
 ```
-
